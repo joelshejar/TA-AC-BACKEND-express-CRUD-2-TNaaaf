@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Blog Articles</h1>
+    <a href="/articles">Create Article</a>
+    <%= articles.forEach((article)=>{%>
+      <a href=""><% article.title%></a>
+    <%=})    %>
+    <p>Welcome to <%= title %></p>
+  </body>
+</html>
