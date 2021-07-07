@@ -1,11 +1,11 @@
 var mongoose = require('mongoose')
 var Schema = mongoose.Schema
 var articleSchema = new Schema({
-    title: String,
-    description: String,
-    tags: String,
+    title: {type: String, required:true},
+    description: {type: String, required:true},
+    tags: [String],
     author: String,
-    likes: Number
-})
+    likes: {type:Number, default:0}
+},{timestamps:true})
 
-module.exports = mongoose.model('Aticle', articleSchema)
+module.exports = mongoose.model('Article', articleSchema)
