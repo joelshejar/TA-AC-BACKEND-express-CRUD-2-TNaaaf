@@ -1,0 +1,140 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+body {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+}
+
+.btn-pri {
+  background-color: #339633;
+  color: white;
+}
+
+.btn-sec {
+  background-color: #e23971;
+  color: white;
+}
+
+.sec-padding {
+  padding: 3rem 0;
+}
+
+header {
+  background-color: aquamarine;
+  padding: 2rem 0;
+}
+
+header strong {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #e23971;
+}
+
+.hero-Sec {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.hero-Sec h1 {
+  font-size: 3rem;
+  color: gray;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  padding-left: 1rem;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  padding-left: 1rem;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder,
+select::-ms-input-placeholder {
+  padding-left: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  padding-left: 1rem;
+}
+
+.newBook-sec form {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 1rem;
+}
+
+.bookList-div {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid gray;
+}
+
+.bookList-div .book-div {
+  border: 1px solid gray;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+.bookList-div .book-div h2 {
+  font-size: 2rem;
+  color: #339633;
+  text-decoration: underline;
+}
+
+.bookDetails-div {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid gray;
+}
