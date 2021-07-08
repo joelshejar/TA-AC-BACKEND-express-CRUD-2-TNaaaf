@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="">
+      <div class="flex jsb container">
+        <a class="btn btn-pri" href="/">Home</a>
+        <strong>Book-Store</strong>
+        <div>
+          <a class="btn btn-pri" href="/books/new">Add new Book</a>
+          <a class="btn btn-pri" href="/authors/new">Add new Author</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-Sec">
+        <h1>List of Books</h1>
+      </section>
+      <section class="bookList-sec">
+        <div class="bookList-div">
+          <% books.forEach(ele=>{ %>
+          <div class="book-div">
+            <a href="/books/<%= ele.id %>"><h2><%= ele.title %></h2></a>
+          </div>
+          <% }) %>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
